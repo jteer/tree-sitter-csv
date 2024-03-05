@@ -1,0 +1,79 @@
+==================
+SSV - Quoted Fields
+==================
+"Name";"Age";"Location"
+"John, Jr.";"30";"New York, NY"
+"Alice";"25";"San Francisco, CA"
+
+---
+
+(source_file
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character)))))
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character)))))
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))))

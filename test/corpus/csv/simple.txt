@@ -1,0 +1,39 @@
+==================
+CSV - Simple CSV
+==================
+
+Name,Age
+John,25,
+Alice,30
+
+---
+
+(source_file
+  (record)
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (non_escaped_text)))))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      (delimiter)
+      (field
+        (integer_value)))
+    (field_pair
+      (delimiter)))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      (delimiter)
+      (field
+        (integer_value)))))

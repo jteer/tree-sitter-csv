@@ -1,0 +1,58 @@
+==================
+CSV - Quoted Values
+==================
+
+Name,Age,Location
+John,25,"New York, NY"
+Alice,30,"San Francisco, CA"
+
+---
+
+(source_file
+  (record)
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      separator: (delimiter)
+      (field
+        (string_value
+          (non_escaped_text))))
+    (field_pair
+      separator: (delimiter)
+      (field
+        (string_value
+          (non_escaped_text)))))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      separator: (delimiter)
+      (field
+        (integer_value)))
+    (field_pair
+      separator: (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character)))))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      separator: (delimiter)
+      (field
+        (integer_value)))
+    (field_pair
+      separator: (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))))
