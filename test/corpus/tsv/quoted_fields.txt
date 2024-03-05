@@ -1,0 +1,79 @@
+==================
+TSV - Quoted Fields
+==================
+"Name"\t"Age"\t"Location"
+"John, Jr."\t"30"\t"New York, NY"
+"Alice"\t"25"\t"San Francisco, CA"
+
+---
+
+(source_file
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character)))))
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character)))))
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))))

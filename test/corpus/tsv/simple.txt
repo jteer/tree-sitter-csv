@@ -1,0 +1,22 @@
+==================
+TSV - Simple TSV
+==================
+Name    Age
+John    25
+Alice   30
+
+---
+
+(source_file
+  (record
+    (field
+      (string_value
+        (non_escaped_text))))
+  (record
+    (field
+      (string_value
+        (non_escaped_text))))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))))

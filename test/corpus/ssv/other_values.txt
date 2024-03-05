@@ -1,0 +1,98 @@
+==================
+SSV - Other values
+==================
+Name;Age;HexValue;Deleted;
+John;null;0x1A;true
+Alice;na;0xFF;FALSE
+Bob;21.24;0xFF;TRUE
+Sam;10;0x1A;false
+
+
+---
+
+(source_file
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (non_escaped_text))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (non_escaped_text))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (non_escaped_text))))
+    (field_pair
+      (delimiter)))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      (delimiter)
+      (field
+        (null_value)))
+    (field_pair
+      (delimiter)
+      (field
+        (hexadecimal)))
+    (field_pair
+      (delimiter)
+      (field
+        (boolean_value))))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      (delimiter)
+      (field
+        (na_value)))
+    (field_pair
+      (delimiter)
+      (field
+        (hexadecimal)))
+    (field_pair
+      (delimiter)
+      (field
+        (boolean_value))))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      (delimiter)
+      (field
+        (floating_point)))
+    (field_pair
+      (delimiter)
+      (field
+        (hexadecimal)))
+    (field_pair
+      (delimiter)
+      (field
+        (boolean_value))))
+  (record
+    (field
+      (string_value
+        (non_escaped_text)))
+    (field_pair
+      (delimiter)
+      (field
+        (integer_value)))
+    (field_pair
+      (delimiter)
+      (field
+        (hexadecimal)))
+    (field_pair
+      (delimiter)
+      (field
+        (boolean_value)))))

@@ -1,0 +1,83 @@
+==================
+CSV - new lines
+==================
+
+"Name","Age","Location"
+"John
+The Man","30","New York"
+"Alice","25","San Francisco"
+
+---
+
+(source_file
+  (record)
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character)))))
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content)
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character)))))
+  (record
+    (field
+      (string_value
+        (quote_character)
+        (escaped_content
+          (text_content))
+        (quote_character)))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))
+    (field_pair
+      (delimiter)
+      (field
+        (string_value
+          (quote_character)
+          (escaped_content
+            (text_content))
+          (quote_character))))))

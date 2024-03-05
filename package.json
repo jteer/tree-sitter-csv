@@ -1,0 +1,38 @@
+{
+  "name": "tree-sitter-csv",
+  "version": "1.0.0",
+  "description": "tree-sitter grammar for csv, tsv, ssv, psv",
+  "main": "bindings/node",
+  "scripts": {
+    "install": "tree-sitter generate",
+    "test": "npx tree-sitter test",
+    "test:csv": "npx tree-sitter test -i CSV",
+    "test:psv": "npx tree-sitter test -i PSV",
+    "test:ssv": "npx tree-sitter test -i SSV",
+    "test:tsv": "npx tree-sitter test -i TSV",
+
+    "build": "npx tree-sitter generate",
+    "build:wasm": "npx tree-sitter build-wasm"
+  },
+  "author": "jteer.developer@gmail.com",
+  "license": "MIT",
+  "tree-sitter": [
+    {
+      "scope": "source.csv",
+      "file-types": [
+        "csv"
+      ],
+      "highlights": [
+        "queries/highlights.scm"
+      ]
+    }
+  ],
+  "dependencies": {
+    "nan": "^2.18.0"
+  },
+  "devDependencies": {
+    "commit-and-tag-version": "^12.0.0",
+    "node-gyp": "^10.0.1",
+    "tree-sitter-cli": "^0.20.8"
+  }
+}
